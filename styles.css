@@ -12,7 +12,7 @@
    --bg-color: #101317;
    --second-bg-color: #17191b;
    --text-color: #fff;
-   --main-color: rgb(255, 34, 0);
+   --main-color: rgb(255, 0, 0);
 }
 html{
     font-size: 62.5%;
@@ -23,8 +23,6 @@ body{
   color: var(--text-color);
 }
 .header{
-  position: fixed;
-  top: 0;
   left: 0;
   width: 100%;
   padding: 3rem 9%;
@@ -91,14 +89,15 @@ span{
   line-height: 1.3;
 }
 .home-img{
-  border-radius: 50%;
-  background-color: var(--main-color);
+  border-radius: 30%;
+  border: 2px solid var(--main-color);
+  background-color: var(--second-bg-color);
   box-shadow: 0 0 25px var(--main-color);
 }
 .home-img img{
   position: relative;
-  width: 35vw;
-  border-radius: 50%;
+  width: 30vw;
+  border-radius: 55%;
   top:  1rem;
 }
 .home-content p{
@@ -148,14 +147,14 @@ span{
   background: var(--second-bg-color);
 }
 .about-img{
-  border-radius: 50%;
+  border-radius: 30%;
   border: 10px solid var(--main-color);
   box-shadow:inset 0 0 25px var(--main-color),
               0 0 25px var(--main-color);
 }
 .about-img img{
   position: relative;
-  width: 35vw;
+  width: 30vw;
   border-radius: 50%;
   top: 1rem;
 }
@@ -371,8 +370,8 @@ span{
   border: 2px solid var(--main-color);
   width: 40px;
   height: 40px;
-  line-height: 38px;
   display: inline-block;
+  justify-content: center;
   text-align: center;
   border-radius: 50%;
   margin: 0 8px;
@@ -386,6 +385,9 @@ span{
   transform: scale(1.2)translatey(-10px);
   color: var(--main-color);
   border: 2px solid var(--main-color);
+}
+.social a i{
+  margin-top: 6px;
 }
 .footer ul{
   margin-top: 0;
